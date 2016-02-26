@@ -1,5 +1,7 @@
 *
 !.gitignore
+!README.md
+.bash-git-prompt/
 !.bash_profile
 !.bashrc
 !.emacs
