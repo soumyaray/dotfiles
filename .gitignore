@@ -1,0 +1,12 @@
+*
+!.gitignore
+!.bash_profile
+!.bashrc
+!.emacs
+!.gitconfig
+!.gitignore_global
+!.gitk
+!.profile
+!.pryrc
+!.rvmrc
+.Rproj.user
