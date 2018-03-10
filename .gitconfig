@@ -1,6 +1,7 @@
 [user]
 	name = Soumya Ray
 	email = soumya.ray@gmail.com
+	signingkey = CE510594
 
 [core]
 	excludesfile = /Users/soumyaray/.gitignore_global
@@ -16,8 +17,8 @@
 
 [alias]
   l = log --all --graph --date=short --pretty=format:'%C(yellow)%h%Creset%C(white bold)%d%Creset %C(white)%s%Creset %C(white dim)(%an on %ad)%Creset'
-
   lh = !git l | head
+	amend = commit -a --amend -C HEAD
 
 [push]
 	default = simple

@@ -20,6 +20,7 @@ echo "alias confgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $
 ```
 *
 !.gitignore
+!.README.MD
 !.bash_profile
 !.bashrc
 !.emacs
@@ -29,7 +30,6 @@ echo "alias confgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $
 !.profile
 !.pryrc
 !.rvmrc
-.Rproj.user
 ```
 note that `*` and `.gitignore` are essential; all others are up to you
 

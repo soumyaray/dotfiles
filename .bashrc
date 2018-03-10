@@ -16,15 +16,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 # Git flow completion
-source ~/Sync/Dropbox/Scripts/git-flow-completion/git-flow-completion.bash
-
-### Added by the Heroku Toolbelt
-PATH="/usr/local/heroku/bin:$PATH"
-PATH=$PATH:~/Dropbox/scripts/terminal_scripts:~/bin
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=/usr/local/sbin:$PATH
-PATH=$PATH:/usr/local/gitopen
-export PATH
+source ~/ossdev/terminal_scripts/git-flow-completion/git-flow-completion.bash
 
 export EDITOR=emacs
 
@@ -56,3 +48,18 @@ source ~/.bash-git-prompt/gitprompt.sh
 ## Git control of dotfiles
 # See ~/README.md for dotfiles repo
 alias confgit='/usr/bin/git --git-dir=/Users/soumyaray/.cfg/ --work-tree=/Users/soumyaray'
+
+## Ruby warnings suppression
+export RUBYOPT=-W0
+
+## One liner pbcopy without trailing newlines
+alias copy="tr -d '\n' | pbcopy"
+
+## Docker aliases (https://forums.docker.com/t/how-to-delete-cache/5753/2)
+# cleans all dangling images left over from multiple builds
+alias docker_clean_images='docker rmi $(docker images -a --filter=dangling=true -q)'
+# removing stopped containers
+alias docker_clean_ps='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
+
+# added by travis gem
+[ -f /Users/soumyaray/.travis/travis.sh ] && source /Users/soumyaray/.travis/travis.sh

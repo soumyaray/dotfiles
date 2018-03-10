@@ -52,6 +52,7 @@
 ;; soumyaray: set gutter color and size
 
 (set-face-background 'git-gutter:separator "#2e2e2e")
+(set-face-attribute 'region nil :background "#666" :foreground "#ffffff")
 
 ;; soumyaray: Start with empty buffer
 (setf inhibit-splash-screen t)
