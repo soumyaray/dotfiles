@@ -1,0 +1,40 @@
+{
+    "initial_working_directory": "~",
+    "panes": {
+        "quadrants": [
+            "TabSet1",
+            "Source",
+            "TabSet2",
+            "Console"
+        ],
+        "tabSet1": [
+            "Environment",
+            "History",
+            "Files",
+            "Connections",
+            "Packages",
+            "Build",
+            "VCS",
+            "Tutorial",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "Plots",
+            "Help",
+            "Viewer",
+            "Presentations"
+        ],
+        "hiddenTabSet": [],
+        "console_left_on_top": false,
+        "console_right_on_top": false,
+        "additional_source_columns": 0
+    },
+    "posix_terminal_shell": "zsh",
+    "jobs_tab_visibility": "shown",
+    "save_workspace": "always",
+    "scroll_past_end_of_document": true,
+    "restore_source_documents": false,
+    "restore_last_project": false,
+    "insert_native_pipe_operator": true,
+    "default_project_location": "~/Sync/Dropbox/Research/My Papers/Working Papers/Privacy Control 2022"
+}

@@ -1,0 +1,39 @@
+[user]
+	name = Soumya Ray
+	email = soumya.ray@gmail.com
+	signingkey = CE510594
+
+[core]
+	excludesfile = /Users/soumyaray/.gitignore_global
+	editor = micro
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[alias]
+  l = log --all --graph --date=short --pretty=format:'%C(yellow)%h%Creset%C(white bold)%d%Creset %C(white)%s%Creset %C(white dim)(%an on %ad)%Creset'
+  lh = !git l | head
+  amend = commit -a --amend -C HEAD
+  undo = !git reset --hard HEAD
+
+[push]
+	default = simple
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[github]
+	user = soumyaray
+[ghi]
+	token = !security find-internet-password -a soumyaray -s github.com -l 'ghi token' -w
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[init]
+	defaultBranch = main

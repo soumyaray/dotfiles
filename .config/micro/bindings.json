@@ -1,0 +1,19 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "CtrlUnderscore": "lua:comment.comment",
+
+    "Ctrl-p": "CommandMode",
+    
+    "Ctrl-Alt-Down": "HSplit",
+    "Ctrl-Alt-Right": "VSplit",
+    "Alt-v": "command:vsplit",
+    "Alt-h": "command:hsplit",
+    "Alt-t": "command:vsplit,command:term",
+
+    "Ctrl-Shift-Down": "DuplicateLine",
+
+    "Ctrl-a": "StartOfLine",
+    "Ctrl-d": "Delete",
+    "Ctrl-e": "EndOfLine",
+
+}
